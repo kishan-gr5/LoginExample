@@ -19,20 +19,17 @@ public class ConnectionManager
 
           Class.forName("com.mysql.jdbc.Driver");
           
-          try
-          {            	
-             con = DriverManager.getConnection(url,"root","root"); 
+               	
+           con = DriverManager.getConnection(url,"root","root"); 
               								
           // assuming your SQL Server's	username is "username"               
           // and password is "password"
-               
-          }
-          
+       }
           catch (SQLException ex)
           {
              ex.printStackTrace();
           }
-       }
+       
 
        catch(ClassNotFoundException e)
        {
