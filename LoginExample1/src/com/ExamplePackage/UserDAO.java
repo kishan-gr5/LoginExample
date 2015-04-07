@@ -13,7 +13,7 @@ public class UserDAO
 		String Username = bean.getUsername();
 		String Password = bean.getPassword();
 		
-		String query = "Select * from users where Username= "+ Username +""+" AND Password="+ Password +" ";
+		String query = "Select * from Loginaccess where Username= '"+ Username +"'AND Password= '"+ Password+"'";
 		
 		System.out.println("Username"+ Username);
 		System.out.println("Password"+ Password);
@@ -35,7 +35,7 @@ public class UserDAO
 			else if(res)
 			{
 				String firstName = rs.getString("firstname");
-				String lastName = rs.getString("fastname");
+				String lastName = rs.getString("lastname");
 				bean.setFirstname(firstName);
 				bean.setLastname(lastName);
 				bean.setValid(true);

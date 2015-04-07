@@ -1,7 +1,7 @@
 package com.ExamplePackage;
 
 import java.sql.*;
-import java.util.*;
+
 
 public class ConnectionManager 
 {
@@ -14,7 +14,7 @@ public class ConnectionManager
       
        try
        {
-          String url = "jdbc:mysql://localhost:3306/User"; 
+           url = "jdbc:mysql://localhost:3306/Logindetails"; 
           // assuming "DataSource" is your DataSource name
 
           Class.forName("com.mysql.jdbc.Driver");
